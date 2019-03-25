@@ -32,8 +32,8 @@ complete -cf torsocks
 
 # Detect color support
 if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-    PS1="\[\e[0;32m\]\u";
-    PS1+="\[\e[0;36m\]@";
+    PS1="\[\e[0;32m\]\u"
+    PS1+="\[\e[0;36m\]@"
     # Detect remote control
     case $(ps -o comm= -p $PPID) in
         sshd|*/sshd)
@@ -41,17 +41,17 @@ if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
         *)
             PS1+="\[\e[1;33m\]\h";;
     esac
-    PS1+="\[\e[0;36m\]: ";
-    PS1+="\[\e[0;34m\]\w ";
+    PS1+="\[\e[0;36m\]: "
+    PS1+="\[\e[0;34m\]\w "
     # Detect root
     if [ $EUID = 0 ]; then
-        PS1+="\[\e[0;36m\]Λ";
+        PS1+="\[\e[0;36m\]Λ"
     else
-        PS1+="\[\e[0;36m\]λ";
+        PS1+="\[\e[0;36m\]λ"
     fi
-    PS1+="\[\e[0m\] ";
-    PS2="\[\e[0;36m\]\ \[\e[0m\]";
+    PS1+="\[\e[0m\] "
+    PS2="\[\e[0;36m\]\ \[\e[0m\]"
 else
-    PS1="\u@\h:\W\\$ ";
-    PS2="\ ";
+    PS1="\u@\h:\W\\$ "
+    PS2="\ "
 fi
