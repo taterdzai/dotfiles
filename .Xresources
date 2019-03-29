@@ -2,6 +2,9 @@
 Xcursor.theme: Bibata_Ice
 Xcursor.size: 32
 
+! font
+*.font: "Monoid Nerd Font"
+
 ! special
 *.foreground:   #ede6ef
 *.background:   #200f26
