@@ -19,31 +19,52 @@ set $ws9 "9"
 set $ws10 "10"
 
 # variables from Xresources
-set_from_resource $black         color0  #151515
-set_from_resource $red           color1  #ac4142
-set_from_resource $green         color2  #90a959
-set_from_resource $yellow        color3  #f4bf75
-set_from_resource $blue          color4  #6a9fb5
-set_from_resource $magenta       color5  #aa759f
-set_from_resource $cyan          color6  #75b5aa
-set_from_resource $white         color7  #d0d0d0
-set_from_resource $light_black   color8  #505050
-set_from_resource $light_red     color9  #ac4142
-set_from_resource $light_green   color10 #90a959
-set_from_resource $light_yellow  color11 #f4bf75
-set_from_resource $light_blue    color12 #6a9fb5
-set_from_resource $light_magenta color13 #aa759f
-set_from_resource $light_cyan    color14 #75b5aa
-set_from_resource $light_white   color15 #f5f5f5
+set_from_resource $foreground    foreground  #d0d0d0
+set_from_resource $background    background  #151515
+set_from_resource $cursorColor   cursorColor #d0d0d0
+set_from_resource $black         color0      #151515
+set_from_resource $red           color1      #ac4142
+set_from_resource $green         color2      #90a959
+set_from_resource $yellow        color3      #f4bf75
+set_from_resource $blue          color4      #6a9fb5
+set_from_resource $magenta       color5      #aa759f
+set_from_resource $cyan          color6      #75b5aa
+set_from_resource $white         color7      #d0d0d0
+set_from_resource $light_black   color8      #505050
+set_from_resource $light_red     color9      #ac4142
+set_from_resource $light_green   color10     #90a959
+set_from_resource $light_yellow  color11     #f4bf75
+set_from_resource $light_blue    color12     #6a9fb5
+set_from_resource $light_magenta color13     #aa759f
+set_from_resource $light_cyan    color14     #75b5aa
+set_from_resource $light_white   color15     #f5f5f5
 
-set_from_resource $font font "monospace"
+set_from_resource $font font "monospace 9"
 
-# font (from pack Nerd Fonts)
-font pango:$font 9
+## Style config
 
-floating_modifier $mod
+# set colors
+#                       BORDER        BACKGROUND  TEXT        INDICATOR     CHILD_BORDER
+client.focused          $magenta      $background $foreground $magenta      $magenta
+client.unfocused        $black        $background $foreground $black        $black
+client.focused_inactive $black        $background $foreground $black        $black
+client.urgent           $red          $background $foreground $red          $red
+client.background       $black
+
+# set font
+font pango:$font
+
+# remove window borders
+default_border pixel 2
+default_floating_border pixel 2
+
+# set gaps between windows
+gaps inner 10
+gaps outer 0
 
 ## Bindsyms
+
+floating_modifier $mod
 
 # Executables
 
@@ -51,7 +72,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # dmenu replacment
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -show drun
 
 # Focus control
 
@@ -88,7 +109,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+Shift+a focus child
 
 # Layout control
 
@@ -128,6 +149,7 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
+bindsym $mod+Tab workspace back_and_forth
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1

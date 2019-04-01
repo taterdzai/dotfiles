@@ -3,7 +3,7 @@ Xcursor.theme: Bibata_Ice
 Xcursor.size: 32
 
 ! font
-*.font: "Monoid Nerd Font"
+*.font: Monoid Nerd Font 9
 
 ! special
 *.foreground:   #ede6ef
@@ -41,3 +41,9 @@ Xcursor.size: 32
 ! white
 *.color7:       #bbb1c0
 *.color15:      #e7e4e8
+
+! === rofi ===
+
+rofi.modi:		drun,run,window,ssh
+rofi.show-icons:	true
+rofi.sidebar-mode:	true
