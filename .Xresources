@@ -2,45 +2,68 @@
 Xcursor.theme: Bibata_Ice
 Xcursor.size: 32
 
+! define font name
+#define fontname Monoid Nerd Font
+
+! define colors
+#define fgd	#ede6ef
+#define bgd	#200f26
+#define blk	#39343c
+#define red	#d71435
+#define grn	#a1ba17
+#define ylw	#df942c
+#define blu	#5489bf
+#define mgt	#9c57b2
+#define cyn	#479a93
+#define wht	#bbb1c0
+#define l_blk	#4e4b4f
+#define l_red	#e92848
+#define l_grn	#bad434
+#define l_ylw	#f2a944
+#define l_blu	#77acde
+#define l_mgt	#ba7dd0
+#define l_cyn	#6dbfb9
+#define l_wht	#e7e4e8
+
 ! font
-*.font: Monoid Nerd Font 9
+*.font: fontname 9
 
-! special
-*.foreground:   #ede6ef
-*.background:   #200f26
-*.cursorColor:  #ede6ef
+! set colors
+*.foreground:   fgd
+*.background:   bgd
+*.cursorColor:  fgd
+*.color0:       blk
+*.color1:       red
+*.color2:       grn
+*.color3:       ylw
+*.color4:       blu
+*.color5:       mgt
+*.color6:       cyn
+*.color7:       wht
+*.color8:       l_blk
+*.color9:       l_red
+*.color10:      l_grn
+*.color11:      l_ylw
+*.color12:      l_blu
+*.color13:      l_mgt
+*.color14:      l_cyn
+*.color15:      l_wht
 
-! black
-*.color0:       #39343c
-*.color8:       #4e4b4f
+! === urxvt ===
 
-! red
-*.color1:       #d71435
-*.color9:       #e92848
+URxvt.font: xft:fontname:size=11
+URxvt.boldFont: xft:fontname:size=11:style=bold
+URxvt.italicFont: xft:fontname:size=11:style=italic
 
-! green
-*.color2:       #a1ba17
-*.color10:      #bad434
+URxvt.scrollstyle: plain
+URxvt.scrollBar_right: true
+URxvt.scrollTtyOutput: false
+URxvt.scrollTtyKeypress: true
+URxvt.scrollColor: fgd
+URxvt.troughColor: bgd
 
-! yellow
-*.color3:       #df942c
-*.color11:      #f2a944
+URxvt.cursorBlink: true
 
-! blue
-*.color4:       #5489bf
-*.color12:      #77acde
-
-! magenta
-*.color5:       #9c57b2
-*.color13:      #ba7dd0
-
-! cyan
-*.color6:       #479a93
-*.color14:      #6dbfb9
-
-! white
-*.color7:       #bbb1c0
-*.color15:      #e7e4e8
 
 ! === rofi ===
 
