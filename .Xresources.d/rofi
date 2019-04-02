@@ -1,0 +1,14 @@
+rofi.modi:		drun,run,window,ssh
+rofi.sidebar-mode:	true
+rofi.show-icons:	true
+
+rofi.location:		2
+rofi.width:		100
+rofi.columns:		4
+
+rofi.font:		fontname 11
+
+rofi.color-normal:	bgd, fgd, bgd, l_magenta, fgd
+rofi.color-urgent:	l_blue, fgd, l_blue, l_cyan, fgd
+rofi.color-active:	l_blue, fgd, l_blue, l_cyan, fgd
+rofi.color-window:	bgd, l_magenta, l_magenta

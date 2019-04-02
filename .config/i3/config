@@ -19,27 +19,26 @@ set $ws9 "9"
 set $ws10 "10"
 
 # variables from Xresources
-set_from_resource $foreground    foreground  #d0d0d0
-set_from_resource $background    background  #151515
-set_from_resource $cursorColor   cursorColor #d0d0d0
-set_from_resource $black         color0      #151515
-set_from_resource $red           color1      #ac4142
-set_from_resource $green         color2      #90a959
-set_from_resource $yellow        color3      #f4bf75
-set_from_resource $blue          color4      #6a9fb5
-set_from_resource $magenta       color5      #aa759f
-set_from_resource $cyan          color6      #75b5aa
-set_from_resource $white         color7      #d0d0d0
-set_from_resource $light_black   color8      #505050
-set_from_resource $light_red     color9      #ac4142
-set_from_resource $light_green   color10     #90a959
-set_from_resource $light_yellow  color11     #f4bf75
-set_from_resource $light_blue    color12     #6a9fb5
-set_from_resource $light_magenta color13     #aa759f
-set_from_resource $light_cyan    color14     #75b5aa
-set_from_resource $light_white   color15     #f5f5f5
+set_from_resource $foreground    i3wm.foreground  #d0d0d0
+set_from_resource $background    i3wm.background  #151515
+set_from_resource $black         i3wm.color0      #151515
+set_from_resource $red           i3wm.color1      #ac4142
+set_from_resource $green         i3wm.color2      #90a959
+set_from_resource $yellow        i3wm.color3      #f4bf75
+set_from_resource $blue          i3wm.color4      #6a9fb5
+set_from_resource $magenta       i3wm.color5      #aa759f
+set_from_resource $cyan          i3wm.color6      #75b5aa
+set_from_resource $white         i3wm.color7      #d0d0d0
+set_from_resource $light_black   i3wm.color8      #505050
+set_from_resource $light_red     i3wm.color9      #ac4142
+set_from_resource $light_green   i3wm.color10     #90a959
+set_from_resource $light_yellow  i3wm.color11     #f4bf75
+set_from_resource $light_blue    i3wm.color12     #6a9fb5
+set_from_resource $light_magenta i3wm.color13     #aa759f
+set_from_resource $light_cyan    i3wm.color14     #75b5aa
+set_from_resource $light_white   i3wm.color15     #f5f5f5
 
-set_from_resource $font font "monospace 9"
+set_from_resource $font i3wm.font "monospace 9"
 
 ## Style config
 

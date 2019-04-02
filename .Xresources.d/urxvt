@@ -1,0 +1,32 @@
+URxvt.scrollstyle: plain
+URxvt.scrollBar_right: true
+URxvt.scrollTtyOutput: false
+URxvt.scrollTtyKeypress: true
+URxvt.scrollColor: fgd
+URxvt.troughColor: bgd
+
+URxvt.cursorBlink: true
+
+URxvt.font: xft:fontname:size=11
+URxvt.boldFont: xft:fontname:size=11:style=bold
+URxvt.italicFont: xft:fontname:size=11:style=italic
+
+URxvt.foreground:	fgd
+URxvt.background:	bgd
+URxvt.cursorColor:	fgd
+URxvt.color0:		black
+URxvt.color1:		red
+URxvt.color2:		green
+URxvt.color3:		yellow
+URxvt.color4:		blue
+URxvt.color5:		magenta
+URxvt.color6:		cyan
+URxvt.color7:		white
+URxvt.color8:		l_black
+URxvt.color9:		l_red
+URxvt.color10:		l_green
+URxvt.color11:		l_yellow
+URxvt.color12:		l_blue
+URxvt.color13:		l_magenta
+URxvt.color14:		l_cyan
+URxvt.color15:		l_white
