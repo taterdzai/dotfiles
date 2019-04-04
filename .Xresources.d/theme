@@ -3,22 +3,22 @@ Xcursor.size:		32
 
 #define fontname	Monoid Nerd Font
 
-! Paraiso dark theme (base16) with changed foreground and white
-#define fgd		#f4edf4
-#define bgd		#2f1e2e
-#define black		#2f1e2e
-#define red		#ef6155
-#define green		#48b685
-#define yellow		#fec418
-#define blue		#06b6ef
-#define magenta		#815ba4
-#define cyan		#5bc4bf
-#define white		#dbd4db
-#define l_black		#776e71
-#define l_red		#ef6155
-#define l_green		#48b685
+! modified paraiso dark theme (base16)
+#define fgd		#ebdfea
+#define bgd		#412440
+#define black		#140714
+#define red		#df594d
+#define green		#38ac79
+#define yellow		#e5ac03
+#define blue		#00ade5
+#define magenta		#6b468c
+#define cyan		#43b6b0
+#define white		#d6d2d5
+#define l_black		#575153
+#define l_red		#f97b70
+#define l_green		#57cb97
 #define l_yellow	#fec418
-#define l_blue		#06b6ef
-#define l_magenta	#815ba4
-#define l_cyan		#5bc4bf
-#define l_white		#faf1fa
+#define l_blue		#10bef7
+#define l_magenta	#8e67b2
+#define l_cyan		#68d2cd
+#define l_white		#f5ebf8

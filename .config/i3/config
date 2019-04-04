@@ -19,24 +19,24 @@ set $ws9 "9"
 set $ws10 "10"
 
 # variables from Xresources
-set_from_resource $foreground    i3wm.foreground  #d0d0d0
-set_from_resource $background    i3wm.background  #151515
-set_from_resource $black         i3wm.color0      #151515
-set_from_resource $red           i3wm.color1      #ac4142
-set_from_resource $green         i3wm.color2      #90a959
-set_from_resource $yellow        i3wm.color3      #f4bf75
-set_from_resource $blue          i3wm.color4      #6a9fb5
-set_from_resource $magenta       i3wm.color5      #aa759f
-set_from_resource $cyan          i3wm.color6      #75b5aa
-set_from_resource $white         i3wm.color7      #d0d0d0
-set_from_resource $light_black   i3wm.color8      #505050
-set_from_resource $light_red     i3wm.color9      #ac4142
-set_from_resource $light_green   i3wm.color10     #90a959
-set_from_resource $light_yellow  i3wm.color11     #f4bf75
-set_from_resource $light_blue    i3wm.color12     #6a9fb5
-set_from_resource $light_magenta i3wm.color13     #aa759f
-set_from_resource $light_cyan    i3wm.color14     #75b5aa
-set_from_resource $light_white   i3wm.color15     #f5f5f5
+set_from_resource $foreground    i3wm.foreground  #ebdfea
+set_from_resource $background    i3wm.background  #412440
+set_from_resource $black         i3wm.color0      #140714
+set_from_resource $red           i3wm.color1      #df594d
+set_from_resource $green         i3wm.color2      #38ac79
+set_from_resource $yellow        i3wm.color3      #e5ac03
+set_from_resource $blue          i3wm.color4      #00ade5
+set_from_resource $magenta       i3wm.color5      #6b468c
+set_from_resource $cyan          i3wm.color6      #43b6b0
+set_from_resource $white         i3wm.color7      #d6d2d5
+set_from_resource $light_black   i3wm.color8      #575153
+set_from_resource $light_red     i3wm.color9      #f97b70
+set_from_resource $light_green   i3wm.color10     #57cb97
+set_from_resource $light_yellow  i3wm.color11     #fec418
+set_from_resource $light_blue    i3wm.color12     #10bef7
+set_from_resource $light_magenta i3wm.color13     #8e67b2
+set_from_resource $light_cyan    i3wm.color14     #68d2cd
+set_from_resource $light_white   i3wm.color15     #f5ebf8
 
 set_from_resource $font i3wm.font "monospace 9"
 
@@ -71,7 +71,16 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # dmenu replacment
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+d exec "rofi -theme ~/.config/rofi/theme		\
+    -theme-str '*{						\
+        background-color:$black;				\
+        text-color:$foreground;					\
+        selbg:$light_magenta;					\
+        actbg:$magenta;						\
+        urgbg:$light_magenta;					\
+        winbg:$foreground;					\
+    }'								\
+    -show drun"
 
 # Focus control
 
@@ -214,3 +223,11 @@ exec --no-startup-id feh --randomize --bg-fill ~/.wallpaper/*
 
 # automounting daemon
 exec --no-startup-id udiskie --use-udisks2
+
+# notifications
+exec --no-startup-id "dunst					\
+-lf  '$foreground'  -nf  '$foreground'    -cf  '$foreground'	\
+-lb  '$black'       -nb  '$magenta'       -cb  '$red'		\
+-lfr '$light_black' -nfr '$light_magenta' -cfr '$light_red'	\
+-fn  '$font 9'							\
+"
