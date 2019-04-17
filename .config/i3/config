@@ -219,7 +219,7 @@ bar {
 exec --no-startup-id compton -b
 
 # random background from .wallpaper folder
-exec --no-startup-id feh --randomize --bg-fill ~/.wallpaper/*
+exec_always --no-startup-id feh --randomize --bg-fill ~/.wallpaper/*
 
 # automounting daemon
 exec --no-startup-id udiskie --use-udisks2
