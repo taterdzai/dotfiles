@@ -8,7 +8,7 @@ rofi.columns:		4
 
 rofi.font:		fontname 11
 
-rofi.color-normal:	bgd, fgd, bgd, l_magenta, fgd
-rofi.color-urgent:	l_blue, fgd, l_blue, l_cyan, fgd
-rofi.color-active:	l_blue, fgd, l_blue, l_cyan, fgd
-rofi.color-window:	bgd, l_magenta, l_magenta
+rofi.color-normal:	bgd, fgd, bgd, base_hue,   fgd
+rofi.color-urgent:	light_blue, fgd, light_blue, light_cyan, fgd
+rofi.color-active:	light_blue, fgd, light_blue, light_cyan, fgd
+rofi.color-window:	bgd, base_hue, base_hue

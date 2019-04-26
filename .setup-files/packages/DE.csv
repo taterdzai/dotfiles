@@ -1,0 +1,26 @@
+xorg,pacman,XOrg server + apps + fonts
+lightdm,pacman,Light display manager
+lightdm-webkit2-greeter,pacman,LightDM greeter that uses WebKit2
+lightdm-webkit-theme-litarvan,pacman,Theme for LightDM WebKit2 greeter
+i3-gaps,pacman,Popular tiling WM
+i3status,pacman,Status generator for i3bar
+i3blocks,pacman,Scheduler for i3bar
+i3lock-fancy-multimonitor-git,aur,i3 lock screen with blur
+nerd-fonts-complete,aur,A lot of fonts and glyphs
+bibata-cursor-theme,aur,Material cursor theme
+urxvt-perls,pacman,Terminal emulator
+rofi,pacman,App launcher + window switcher + dmenu replacement
+compton-tryone-git,aur,Compositor with patched blur
+udiskie,pacman,Disk automounter
+udisks2,pacman,Disk Management Service
+dunst,pacman,Notification daemon
+dex,pacman,XDG autostart implementation
+feh,pacman,Image viewer
+mpv,pacman,Media player
+maim,pacman,Screenshoting app
+zathura,pacman,Document viewer
+zathura-pdf-mupdf,pacman,PDF support for Zathura
+zathura-djvu,pacman,DjVu support for Zathura
+zathura-ps,pacman,PS support for Zathura
+qutebrowser,pacman,Browser with vim-like controls
+telegram-desktop,pacman,Yet another messenger

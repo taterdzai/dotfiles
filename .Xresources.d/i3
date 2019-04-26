@@ -1,8 +1,5 @@
 i3wm.font:		fontname 9
 
-i3wm.foreground:	fgd
-i3wm.background:	bgd
-i3wm.cursorColor:	fgd
 i3wm.color0:		black
 i3wm.color1:		red
 i3wm.color2:		green
@@ -11,11 +8,16 @@ i3wm.color4:		blue
 i3wm.color5:		magenta
 i3wm.color6:		cyan
 i3wm.color7:		white
-i3wm.color8:		l_black
-i3wm.color9:		l_red
-i3wm.color10:		l_green
-i3wm.color11:		l_yellow
-i3wm.color12:		l_blue
-i3wm.color13:		l_magenta
-i3wm.color14:		l_cyan
-i3wm.color15:		l_white
+i3wm.color8:		light_black
+i3wm.color9:		light_red
+i3wm.color10:		light_green
+i3wm.color11:		light_yellow
+i3wm.color12:		light_blue
+i3wm.color13:		light_magenta
+i3wm.color14:		light_cyan
+i3wm.color15:		light_white
+
+i3wm.foreground:	fgd
+i3wm.background:	bgd
+i3wm.highlight:		highlight
+i3wm.base_hue:		base_hue
