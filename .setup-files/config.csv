@@ -1,3 +1,0 @@
-Pacman config,Make pacman colorful and maybe add some other features,on,~/.setup-files/config/Pacman.conf,/etc/pacman.conf
-Remove BEEP,Removes awful beep that nobody asked for,on,~/.setup-files/config/Remove-beep.conf,/etc/modprobe.d/nobeep.conf
-X11 keyboard layouts,Set RU and US layouts with switching by Alt+Shift,on,~/.setup-files/config/X11-keyboard-layout.conf,/etc/X11/xorg.conf.d/00-keyboard.conf
